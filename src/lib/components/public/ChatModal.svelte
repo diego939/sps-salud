@@ -256,7 +256,7 @@
 					
 					const telemedicinaUrl = `/telemedicina-paciente?${params.toString()}`;
 					
-					const response = `${name}, por los síntomas que presentás —${symptomsText}— te voy a derivar a una consulta de telemedicina con un profesional.<br><br>Podés entrar al siguiente enlace:<br><br><a href="${telemedicinaUrl}" class="float-left flex items-center gap-2 px-1 py-1 border-[1.5px] border-white rounded-full bg-transparent text-white font-medium text-sm no-underline hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 my-1"><span class="whitespace-nowrap">https://sps.salud/telemedicina</span></a><br><br>Gracias por confiar en este servicio. Recordá que esto no reemplaza una consulta médica presencial. Hasta luego!`;
+					const response = `${name}, por los síntomas que presentás —${symptomsText}— te voy a derivar a una consulta de telemedicina con un profesional.<br><br>Podés entrar al siguiente enlace:<br><br><a href="${telemedicinaUrl}" class="float-left flex items-center gap-2 px-1 py-1 border-[1.5px] border-white rounded-full bg-transparent text-white font-medium text-sm no-underline hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 my-1"><span class="whitespace-nowrap">sps.salud/telemedicina</span></a><br><br>Gracias por confiar en este servicio. Recordá que esto no reemplaza una consulta médica presencial. Hasta luego!`;
 					
 					addMessage(response, 'assistant');
 					isTyping = false;
@@ -326,7 +326,7 @@
 {#if isOpen}
 	<!-- Overlay -->
 	<div
-		class="fixed inset-0 bg-black bg-opacity-50 z-[2000] flex items-end justify-end p-4 md:p-6"
+		class="fixed inset-0 bg-black bg-opacity-50 z-[2000] flex items-end justify-end p-4 pb-6 md:p-6"
 		role="dialog"
 		aria-modal="true"
 		aria-labelledby="chat-title"
@@ -340,7 +340,7 @@
 		></button>
 		<!-- Modal de Chat -->
 		<div
-			class="bg-white rounded-t-2xl md:rounded-2xl shadow-2xl w-full max-w-md h-[600px] md:h-[650px] flex flex-col overflow-hidden transform transition-all duration-300 relative z-10"
+			class="bg-white rounded-2xl shadow-2xl w-full max-w-md h-[600px] md:h-[650px] flex flex-col overflow-hidden transform transition-all duration-300 relative z-10"
 		>
 			<!-- Header -->
 			<div class="bg-[#349392] text-white p-4 flex items-center justify-between">
