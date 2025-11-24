@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+  app_tutores_backoffice_sveltekit:
+    build:
+      context: ..
+      dockerfile: app_tutores_backoffice_sveltekit/Dockerfile
+      args:
+        - ENV_FILE=envs/front/.env
+    container_name: app_tutores_backoffice_sveltekit
+    networks:
+      - mec_app_tutores
+    ports:
+      - '3400:3000'
+    restart: always
+    env_file:
+      - ../envs/front/.env
+
+networks:
+  mec_app_tutores:
+    external: true

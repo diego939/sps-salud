@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'MontserratRegular';
+	src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MontserratBold';
+	src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MontserratBlack';
+	src: url('/fonts/Montserrat-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+input[type='file']::file-selector-button {
+	background-color: #6b9907;
+}
+
+/* Sidebar active item styling */
+.sidebar-active {
+	color: #ffffff !important;
+	background-color: #C1C818 !important;
+	border-radius: 8px !important;
+	padding: 10px 20px !important;
+	margin: 2px 0px 2px -20px !important;
+	min-width: 200px !important;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Ensure icons inherit the color */
+.sidebar-active svg {
+	color: #ffffff !important;
+	fill: currentColor !important;
+}

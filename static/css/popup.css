@@ -1,0 +1,56 @@
+@charset "utf-8";
+.overlay {
+     position: relative; 
+	z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+	
+}
+#popupBody{
+    width: 600px;
+	height: 600px;
+    padding: 1px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    transition: all 2s ease-in-out;
+    margin: 3% auto; 	 
+}
+#cerrar{
+    
+    transition: all 100ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+}
+
+#ppcan a{
+     
+    transition: all 100ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #32c71e;
+}
+.popupContent {
+	padding:10px;
+}
+
+
+#feisbux{
+	width: 565px;
+	height: 598px; 
+
+}
