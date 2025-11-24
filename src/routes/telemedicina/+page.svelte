@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { onMount, onDestroy } from 'svelte';
 	import { tick } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	// Datos del paciente - por ahora mock, luego vendrán como props desde ChatModal
 	let patientData = {
@@ -214,7 +215,7 @@
 	function confirmEndCall() {
 		stopDoctorCamera();
 		closeEndCallModal();
-		window.history.back();
+		goto('/');
 	}
 </script>
 
@@ -592,7 +593,7 @@
 						on:click={confirmEndCall}
 						class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors font-medium"
 					>
-						Finalizar llamada
+						Finalizar
 					</button>
 				</div>
 			</div>
